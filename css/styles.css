@@ -1,0 +1,35 @@
+body{
+  background-color: #f8f1f1;
+}
+h1{
+  color: #a3d2ca;
+  text-align: center;
+}
+h3{
+  color: #a3d2ca;
+  text-align: center;
+}
+hr{
+  border-style: none;
+  border-top-style: dotted;
+  border-top-width: 10px;
+  border-top-color: #db6400;
+  width:10%;
+  height:10px;
+}
+p{
+  align-self: center;
+  text-align: center;
+  color: #5eaaa8;
+}
+a{
+  color: #db6400;
+  font-size: 21px;
+  font-style: italic;
+}
+/*
+#f8f1f1
+#a3d2ca
+#5eaaa8
+#db6400
+*/
