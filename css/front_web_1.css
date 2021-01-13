@@ -1,0 +1,28 @@
+#top-part{background-color:orange; 
+font-size:30px;
+justify-content: space-around;
+display:flex;
+padding-top:10px;
+padding-bottom:10px;
+margin:0px 0px;}
+a{text-decoration:none;}
+.for_wraping_resistence{flex-flow:row wrap;
+background-color:yellow;
+margin-top:0px;
+margin-bottom:0px;
+margin-left:0px;
+margin-right:0px;}
+#cetre{text-align:center;}
+article{display:flex;}
+#high{width:40%;
+margin:0 25px;
+font-size:20px;
+padding-left:10px;
+padding-right:10px;
+font-family:armenian;}
+.for-centre{text-align:center;}
+.kl{width:100%;margin:0 25px;}
+#check{margin:25px 25px;}
+.er{background-color:white;
+border-radius:10px;}
+#gh{justify-content: space-around;}

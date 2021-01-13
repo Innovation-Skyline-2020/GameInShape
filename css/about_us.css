@@ -1,0 +1,25 @@
+#top-part{background-color:orange; 
+font-size:30px;
+justify-content: space-around;
+display:flex;
+padding-top:10px;
+padding-bottom:10px;
+margin:0px 0px;}
+a{text-decoration:none;}
+.for_wraping_resistence{flex-flow:row wrap;
+background-image:url(image_1.jpg);
+margin-top:0px;
+margin-bottom:0px;
+margin-left:0px;
+margin-right:0px;
+background-size:cover;
+background-attachment:fixed;}
+.content{
+background: white;
+width: 30%;
+padding: 40px;
+margin: 100px 30px;
+font-family: calibri;
+border-radius: 10px;}
+div:hover{transform:scale(1.1);}
+p{font-size: 20px;color: black;}
