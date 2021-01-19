@@ -74,6 +74,8 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'Web_App.wsgi.application'
 
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
