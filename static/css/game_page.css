@@ -78,3 +78,10 @@ color:black;font-size:14px;
 font-weight:bold;
 cursor:pointer;
 }
+canvas {
+  
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+  }
