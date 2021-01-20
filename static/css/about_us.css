@@ -23,3 +23,9 @@ font-family: calibri;
 border-radius: 10px;}
 div:hover{transform:scale(1.1);}
 p{font-size: 20px;color: black;}
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+  }
