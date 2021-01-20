@@ -59,10 +59,3 @@ font-weight:bold;
 cursor:pointer;
 transition:0.4s ease-in-out;}
 #card-style{display:flex;margin:85px 0px;padding:0px 0px 0px 0px;}
-canvas {
-  
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: black;
-  }
