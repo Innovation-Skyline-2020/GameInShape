@@ -1,0 +1,80 @@
+#top-part{background-color:orange; 
+font-size:30px;
+justify-content: space-around;
+display:flex;
+padding-top:10px;
+padding-bottom:10px;
+margin:0px 0px;}
+
+a{text-decoration:none;}
+
+.for_wraping_resistence{flex-flow:row wrap;
+background-image:url(image_2.jpg);
+margin-top:0px;
+margin-bottom:0px;
+margin-left:0px;
+margin-right:0px;
+background-size:cover;
+background-attachment:fixed;}
+
+.container{
+position:relative;
+width:1100px;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:100px;
+}
+
+.container .card{
+position:relative;
+width: 350px;
+height:350px;
+background:white;
+border-radius:4px;
+padding:20px 15px;
+margin:30px 20px;
+display:flex;
+flex-direction:column;
+box-shadow:2px 5px 4px rgba(255,0,0,0.5);
+transition:0.3s ease-in-out;
+}
+.container .card:hover{
+	height:300px;
+}
+
+.container .card .image-resize{
+position:relative;
+height:350px;
+width:300px;
+border-radius:4px;
+top:-60px;
+left:20px;
+z-index:1; 
+box-shadow:2px 5px 4px rgba(255,0,0,0.5);
+}	
+.container .card .content{
+position:relative;
+margin-top:-10px;
+padding: 10px 15px;
+text-align:centre;
+color:black;
+visibility:hidden;
+opacity:0;
+transition: 0.3s ease-in-out;
+}
+
+.container .card:hover .content{
+visibility:visible;
+opacity:1;
+margin-top:-40px;
+
+}
+
+.container .card .content .btn{
+padding:0.5rem;
+background:white;
+color:black;font-size:14px;
+font-weight:bold;
+cursor:pointer;
+}
