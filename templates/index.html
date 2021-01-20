@@ -1,14 +1,16 @@
+{% load static %}
+
 <!DICTYPE html> <!--it inform browser that the document type is HTML    -->
 <html>			<!-- wraps all content -->
 	<head>
 		<meta cherset="utf-8">				<!--sets the character set. Usally set to 'utf-8' which includes most characters  -->
 		<title>Innovation Skyline</title>
-		<link rel="stylesheet" type="text/css" href="css/front_web_1.css">	
+		<link rel="stylesheet" type="text/css" href="{% static 'css/front_web_1.css' %}">	
 		<!--Adding css file related to this web pages  -->
 	</head>
 	<body class="for_wraping_resistence">		<!--contains all content you want to show visitors-->
 		<header id="top-part">
-			<a href="front_web_1.html" target="_self"> HOME </a>
+			<a href="index.html" target="_self"> HOME </a>
 			<a href="game_page.html" target="_self"> GAMES </a>
 			<a href="about_us.html" target="_self"> ABOUT US  </a>	
 		</header>
