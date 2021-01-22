@@ -19,7 +19,7 @@ from . import views
 
 urlpatterns = [
     path('', views.home),
-    path('index.html', views.home),
+    path('front_web_1.html', views.home),
     path('game_page.html', views.game_page),
     path('about_us.html', views.about_us),
     path('game_car.html', views.game_car),

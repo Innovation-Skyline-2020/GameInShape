@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 def home(request):
-    return render(request, 'index.html')
+    return render(request, 'front_web_1.html')
 
 def game_page(request):
     return render(request, 'game_page.html')

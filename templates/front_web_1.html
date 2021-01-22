@@ -1,0 +1,56 @@
+{% load static %}
+
+
+<!DICTYPE html> <!--it inform browser that the document type is HTML    -->
+<html>			<!-- wraps all content -->
+	<head>
+		<meta cherset="utf-8">				<!--sets the character set. Usally set to 'utf-8' which includes most characters  -->
+		<title>Innovation Skyline</title>
+		<link rel="stylesheet" type="text/css" href="{% static 'css/front_web_1.css' %}">
+		<!--Adding css file related to this web pages  -->
+	</head>
+	<body class="for_wraping_resistence">		<!--contains all content you want to show visitors-->
+		<header id="top-part">
+			<a href="front_web_1.html" target="_self"> HOME </a>
+			<a href="game_page.html" target="_self"> GAMES </a>
+			<a href="about_us.html" target="_self"> ABOUT US  </a>
+		</header>
+		<main>
+			<h1 id="cetre">Supreme Physical Gamer</h1>
+			<h2><marquee width="100%" height="5%" direction="right" bgcolor="#c0e218" behavior="alternate">Integrating online games with physical fitness.</marquee></h2>
+		</main>
+		<h2 class="for-centre kl"> Motivation</h2>
+		<p id="check"> “We can’t compromise on Health by playing Online Games. But we can’t compromise on the enjoyment aspect as well.<br>
+Is there a way to integrate both of them ?”
+</p>
+		<centre>
+			<img class="abc" src="{% static 'Images/img123.png' %}" alt="">
+			<img class="abc" src="{% static 'Images/img1234.png' %}" alt="">
+			<img class="abc" src="{% static 'Images/img12345.png' %}" alt="">
+		</centre>
+		<p id="check"> <strong>Yes,</strong> <br>This site is the way to fulfill your dream of getting that well toned body while still having fun.
+		</p>
+		<h2 class="for-centre kl"> How it works</h2>
+		<centre>
+		<p id="check"> Click the link above and you would be directed to the game selection window.</p>
+		<p id="check"> Choose the game you want to play .</p>
+		<p id="check"> You would be directed to the instructions.</p>
+		</centre>
+
+		<article id="gh">
+			<!--
+			<section id="high" class ="er">
+				<h3 class="for-centre"> Target</h3>
+				<p>Building an innovative online gaming platform that integrates video gaming with varied levels of physical activity, providing users a unique and a flexible gaming experience thereby ensuring physical fitness at the same time.
+				   Users would have a choice to toggle between digital and physical modes of playing the individual games.
+				</p>
+			</section>-->
+			<section class ="er">
+				<h2 class="for-centre">Demo video</h2>
+				<iframe width="400" height="250" src="https://www.youtube.com/embed/NP0lUqNAw3k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</section>
+		</article>
+
+	</body>
+
+</html>

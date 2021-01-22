@@ -6,14 +6,36 @@ padding-top:10px;
 padding-bottom:10px;
 margin:0px 0px;}
 a{text-decoration:none;}
+@keyframes backgroundScroll {
+    from {background-position: 0 0;}
+    to {background-position: -180px 0px;}
+}
+@-webkit-keyframes backgroundScroll {
+    from {background-position: 0 0;}
+    to {background-position: -180px 0px;}
+}
+
+/* canvas {
+  
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+  } */
+  
 .for_wraping_resistence{flex-flow:row wrap;
-background-image:url("/static/Images/image.jpg");
+background-image:url('/static/Images/Cool_game.jpg');
 margin-top:0px;
 margin-bottom:0px;
 margin-left:0px;
 margin-right:0px;
 background-size:cover;
-background-attachment:fixed;}
+background-attachment:fixed;
+background-repeat: repeat;
+-webkit-animation: backgroundScroll 20s ease-in-out 1;
+-webkit-animation-fill-mode: forwards;
+animation: backgroundScroll 20s ease-in-out 1;
+animation-fill-mode: forwards;}
 .content{
 background: white;
 width: 30%;
@@ -23,9 +45,3 @@ font-family: calibri;
 border-radius: 10px;}
 div:hover{transform:scale(1.1);}
 p{font-size: 20px;color: black;}
-canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: black;
-  }
