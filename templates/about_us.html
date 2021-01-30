@@ -1,34 +1,57 @@
 {% load static %}
 
-<!DICTYPE html> <!--it inform browser that the document type is HTML    -->
-<html>			<!-- wraps all content -->
-	<head>
-		<meta cherset="utf-8">				<!--sets the character set. Usally set to 'utf-8' which includes most characters  -->
-		<title>Innovation Skyline</title>
-		<link rel="stylesheet" type="text/css" href="{% static 'css/about_us.css' %}">	
-		<!--Adding css file related to this web pages  -->
-	</head>
-	<!-- <canvas id=c></canvas>
+<!DOCTYPE html>
+<!--it inform browser that the document type is HTML    -->
+<html>
+  <!-- wraps all content -->
+  <head>
+    <meta cherset="utf-8" />
+    <!--sets the character set. Usally set to 'utf-8' which includes most characters  -->
+    <title>Innovation Skyline</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/about_us.css' %}"
+    />
+
+    <!--Adding css file related to this web pages  -->
+  </head>
+  <!-- <canvas id=c></canvas>
 	<script src="app.js"></script> -->
-	<body class="for_wraping_resistence">		<!--contains all content you want to show visitors-->
-		<header id="top-part">
-			<a href="front_web_1.html" target="_self"> HOME </a>
-			<a href="game_page.html" target="_self"> GAMES </a>
-			<a href="about_us.html" target="_self"> ABOUT US  </a>	
-		</header>
-		
-		<div class="content">
-			<a href="https://www.iitgoa.ac.in/" target="_blank"> <img src="{% static 'Images/iit_goa2.png' %}" alt="check"/><h2>Indian Institute Of Technology Goa(IIT GOA)</h2></a>
-			<h2>Mentored by IIC IIT GOA</h2>
-			<h3>Developed by IIT GOA Students</h3>
-			<ul>
-				<li>SANJAY MARREDDI</li>
-				<li>RISHABH TRIPATHI</li>
-				<li>SNEHA JAYAGANTHAN </li>
-				<li>PRAKHAR MATHUR</li>
-				<li>KHUSHBOO GUPTA</li>
-				<li>ASHUTOSH SAXENA</li>
-			</ul>
-		</div>
-	</body>
+  <body class="for_wraping_resistence">
+    <!--contains all content you want to show visitors-->
+    <header id="top-part">
+      <a href="front_web_1.html" target="_self"> HOME </a>
+      <a href="game_page.html" target="_self"> GAMES </a>
+      <a href="about_us.html" target="_self"> ABOUT US </a>
+    </header>
+
+    <div class="content">
+      <a href="https://www.iitgoa.ac.in/" target="_blank">
+        <img src="{% static 'Images/iit_goa2.png' %}" alt="check" />
+        <h2>Indian Institute Of Technology Goa(IIT GOA)</h2></a
+      >
+      <h2>Mentored by IIC IIT GOA</h2>
+      <h3>Developed by IIT GOA Students</h3>
+      <ul>
+        <li>SANJAY MARREDDI</li>
+        <li>RISHABH TRIPATHI</li>
+        <li>SNEHA JAYAGANTHAN</li>
+        <li>PRAKHAR MATHUR</li>
+        <li>KHUSHBOO GUPTA</li>
+        <li>ASHUTOSH SAXENA</li>
+      </ul>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"
+  ></script>
 </html>
