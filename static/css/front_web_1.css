@@ -1,55 +1,85 @@
-#top-part{background-color:orange;
-font-size:30px;
-justify-content: space-around;
-display:flex;
-padding-top:10px;
-padding-bottom:10px;
-margin:0px 0px;}
-a{text-decoration:none;}
+#top-part {
+  background-color: orange;
+  font-size: 30px;
+  justify-content: space-around;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0px 0px;
+}
+a {
+  text-decoration: none;
+}
 @keyframes backgroundScroll {
-    from {background-position: 0 0;}
-    to {background-position: -180px 0px;}
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -180px 0px;
+  }
 }
 @-webkit-keyframes backgroundScroll {
-    from {background-position: 0 0;}
-    to {background-position: -180px 0px;}
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -180px 0px;
+  }
 }
-.for_wraping_resistence{flex-flow:row wrap;
-background-image:url('/static/Images/bubbles.jpg');
-margin-top:0px;
-margin-bottom:0px;
-margin-left:0px;
-margin-right:0px;}
-#cetre{text-align:center;
-color: #f05454;}
-article{display:flex;}
-#high{width:40%;
-margin:0 25px;
-font-size:20px;
-padding-left:10px;
-padding-right:10px;
-font-family:armenian;
-background-size:cover;
-background-attachment:fixed;
-background-repeat: repeat;
--webkit-animation: backgroundScroll 20s ease-in-out 1;
--webkit-animation-fill-mode: forwards;
-animation: backgroundScroll 20s ease-in-out 1;
-animation-fill-mode: forwards;}
-.for-centre{text-align:center;
-color: #f05454;}
-.kl{width:100%;margin:0 25px;}
-#check{
-  margin:25px 25px;
+.for_wraping_resistence {
+  flex-flow: row wrap;
+  background-image: url("/static/Images/bubbles.jpg");
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  overflow-x: hidden;
+}
+#cetre {
+  text-align: center;
+  color: #f05454;
+}
+article {
+  display: flex;
+}
+#high {
+  width: 40%;
+  margin: 0 25px;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: armenian;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: repeat;
+  -webkit-animation: backgroundScroll 20s ease-in-out 1;
+  -webkit-animation-fill-mode: forwards;
+  animation: backgroundScroll 20s ease-in-out 1;
+  animation-fill-mode: forwards;
+}
+.for-centre {
+  text-align: center;
+  color: #f05454;
+}
+.kl {
+  width: 100%;
+  margin: 0 25px;
+}
+#check {
+  margin: 25px 25px;
   text-align: center;
   font-size: 150%;
   font-family: serif;
   color: #fa7f72;
 }
-.er{background-color:white;
-border-radius:10px;}
-#gh{justify-content: space-around;}
-.abc{
+.er {
+  background-color: white;
+  border-radius: 10px;
+}
+#gh {
+  justify-content: space-around;
+}
+.abc {
   width: 20%;
   height: 20%;
   margin: 40px 50px 40px 120px;
