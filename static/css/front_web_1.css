@@ -1,16 +1,7 @@
-#top-part {
-  background-color: orange;
-  font-size: 30px;
-  justify-content: space-around;
-  display: flex;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin: 0px 0px;
-}
 a {
   text-decoration: none;
 }
-@keyframes backgroundScroll {
+/* @keyframes backgroundScroll {
   from {
     background-position: 0 0;
   }
@@ -25,15 +16,38 @@ a {
   to {
     background-position: -180px 0px;
   }
+} */
+:root {
+  --blue: #0d7377;
+  --sky-blue: #14ffec;
+  --white: #eeeeee;
+  --gray: #323232;
+  --black: #212121;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+.navbar {
+  font-size: 1.5rem;
+  opacity: 0.8;
+}
+.navbar-brand {
+  font-size: 1.5rem;
 }
 .for_wraping_resistence {
   flex-flow: row wrap;
-  background-image: url("/static/Images/bubbles.jpg");
+  background: linear-gradient(135deg, var(--sky-blue), var(--blue));
   margin-top: 0px;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
   overflow-x: hidden;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.for_wraping_resistence::-webkit-scrollbar {
+  display: none;
 }
 #cetre {
   text-align: center;
