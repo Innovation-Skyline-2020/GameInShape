@@ -1,100 +1,66 @@
-a {
-  text-decoration: none;
-}
-/* @keyframes backgroundScroll {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: -180px 0px;
-  }
-}
-@-webkit-keyframes backgroundScroll {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: -180px 0px;
-  }
-} */
-:root {
-  --blue: #0d7377;
-  --sky-blue: #14ffec;
-  --white: #eeeeee;
-  --gray: #323232;
-  --black: #212121;
-}
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
 .navbar {
+  background-color: var(--sky-blue);
+  padding: 10px 25px 10px 25px;
+}
+.nav-link {
   font-size: 1.5rem;
-  opacity: 0.8;
 }
 .navbar-brand {
   font-size: 1.5rem;
 }
-.for_wraping_resistence {
-  flex-flow: row wrap;
-  background: linear-gradient(135deg, var(--sky-blue), var(--blue));
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
+.main__div {
+  width: 100vw;
   overflow-x: hidden;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
-.for_wraping_resistence::-webkit-scrollbar {
+.main__div::-webkit-scrollbar {
   display: none;
 }
-#cetre {
-  text-align: center;
-  color: #f05454;
+
+.top__content {
+  display: flex;
+  background-color: var(--black);
+  padding: 25px 35px;
+  width: 100%;
+  height: 55vh;
+  align-items: center;
+  color: var(--white);
 }
-article {
+.top__left {
+  width: 60%;
+  justify-content: flex-start;
+}
+.website__title__text {
+  font-weight: 500;
+  font-size: 3.3rem;
+}
+.top__right {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.tagline__div {
+  width: 100%;
   display: flex;
 }
-#high {
-  width: 40%;
-  margin: 0 25px;
-  font-size: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-  font-family: armenian;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: repeat;
-  -webkit-animation: backgroundScroll 20s ease-in-out 1;
-  -webkit-animation-fill-mode: forwards;
-  animation: backgroundScroll 20s ease-in-out 1;
-  animation-fill-mode: forwards;
-}
-.for-centre {
+.tagline__text {
+  font-weight: 300;
+  font-size: 1.5rem;
+  justify-content: center;
   text-align: center;
-  color: #f05454;
 }
-.kl {
+.top__img__div {
+  display: flex;
+  justify-content: center;
   width: 100%;
-  margin: 0 25px;
 }
-#check {
-  margin: 25px 25px;
-  text-align: center;
-  font-size: 150%;
-  font-family: serif;
-  color: #fa7f72;
-}
-.er {
-  background-color: white;
-  border-radius: 10px;
-}
-#gh {
-  justify-content: space-around;
-}
-.abc {
-  width: 20%;
-  height: 20%;
-  margin: 40px 50px 40px 120px;
+
+.top__img {
+  width: 100px;
+  height: 100px;
 }

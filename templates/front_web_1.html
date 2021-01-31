@@ -22,17 +22,23 @@
     <link
       rel="stylesheet"
       type="text/css"
+      href="{% static 'css/variables.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
       href="{% static 'css/front_web_1.css' %}"
     />
 
     <!--Adding css file related to this web pages  -->
   </head>
-  <body class="for_wraping_resistence">
+  <body class="main__div">
     <!--contains all content you want to show visitors-->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light">
       <div class="container-fluid">
         <div class="navbar__left">
-          <a class="navbar-brand" href="#">Innovation Skyline</a>
+          <a class="navbar-brand" href="front_web_1.html">Innovation Skyline</a>
         </div>
         <div class="navbar__right">
           <button
@@ -67,19 +73,28 @@
         </div>
       </div>
     </nav>
-    <main>
-      <h1 id="cetre">Supreme Physical Gamer</h1>
-      <h2>
-        <marquee
-          width="100%"
-          height="5%"
-          direction="right"
-          bgcolor="#c0e218"
-          behavior="alternate"
-          >Integrating online games with physical fitness.</marquee
-        >
-      </h2>
-    </main>
+    <!-- TOp COntent  -->
+    <div class="top__content">
+      <div class="top__left">
+        <h1 class="website__title__text">Supreme Physical Gamer</h1>
+      </div>
+      <div class="top__right">
+        <div class="tagline__div">
+          <p class="tagline__text">
+            Integrating online games with physical fitness.
+          </p>
+        </div>
+        <div class="top__img__div">
+          <img
+            src="{%static 'Images/bubbles.jpg' %}"
+            alt="bubbles"
+            class="top__img"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Middle Content  -->
     <h2 class="for-centre kl">Motivation</h2>
     <p id="check">
       “We can’t compromise on Health by playing Online Games. But we can’t
@@ -95,6 +110,8 @@
       <strong>Yes,</strong> <br />This site is the way to fulfill your dream of
       getting that well toned body while still having fun.
     </p>
+
+    <!-- Bottom COntent  -->
     <h2 class="for-centre kl">How it works</h2>
     <centre>
       <p id="check">
@@ -107,12 +124,12 @@
 
     <article id="gh">
       <!--
-			<section id="high" class ="er">
-				<h3 class="for-centre"> Target</h3>
-				<p>Building an innovative online gaming platform that integrates video gaming with varied levels of physical activity, providing users a unique and a flexible gaming experience thereby ensuring physical fitness at the same time.
-				   Users would have a choice to toggle between digital and physical modes of playing the individual games.
-				</p>
-			</section>-->
+        <section id="high" class ="er">
+          <h3 class="for-centre"> Target</h3>
+          <p>Building an innovative online gaming platform that integrates video gaming with varied levels of physical activity, providing users a unique and a flexible gaming experience thereby ensuring physical fitness at the same time.
+             Users would have a choice to toggle between digital and physical modes of playing the individual games.
+          </p>
+        </section>-->
       <section class="er">
         <h2 class="for-centre">Demo video</h2>
         <iframe
