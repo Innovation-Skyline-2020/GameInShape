@@ -4,7 +4,7 @@ body {
 }
 .navbar {
   background-color: var(--white);
-  padding: 10px 25px 10px 25px;
+  padding: 10px 40px;
 }
 .nav-link {
   font-size: 1.5rem;
@@ -24,8 +24,8 @@ body {
 
 .top__content {
   display: flex;
-  background-color: var(--black);
-  padding: 25px 35px;
+  background: var(--gradient-black);
+  padding: 25px 60px;
   width: 100%;
   height: 55vh;
   align-items: center;
@@ -69,14 +69,30 @@ body {
 .middle__content {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   background: var(--gradient-blue);
   color: var(--gray);
-  margin: 20px 30px;
+  margin: 20px auto;
   padding: 10px 15px;
   align-items: center;
   border: 1px dashed var(--black);
   border-radius: 30px;
   width: 50%;
+}
+@media screen and (max-width: 1060px) {
+  .middle__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--gradient-blue);
+    color: var(--gray);
+    margin: 20px auto;
+    padding: 10px 15px;
+    align-items: center;
+    border: 1px dashed var(--black);
+    border-radius: 30px;
+    width: 90%;
+  }
 }
 .middle__motivation__text {
   font-size: 3.5rem;
@@ -110,9 +126,9 @@ body {
 
 .bottom__content {
   display: flex;
-  background-color: var(--black);
+  background: var(--gradient-black);
   color: var(--white);
-  padding: 10px 20px;
+  padding: 10px 60px;
 }
 .bottom__left__div {
   display: flex;
@@ -157,5 +173,19 @@ body {
 .bottom__right__div {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin: 10px 20px;
+  padding: 5px 20px;
   width: 50%;
+  border: 2px solid var(--sky-blue);
+  border-radius: 30px;
+}
+.demo__video__text {
+  font-weight: 500;
+  font-size: 3.5rem;
+}
+.video__frame {
+  width: 314px;
+  height: 200px;
+  border-radius: 30px;
 }
