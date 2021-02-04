@@ -95,53 +95,67 @@
     </div>
 
     <!-- Middle Content  -->
-    <h2 class="for-centre kl">Motivation</h2>
-    <p id="check">
-      “We can’t compromise on Health by playing Online Games. But we can’t
-      compromise on the enjoyment aspect as well.<br />
-      Is there a way to integrate both of them ?”
-    </p>
-    <centre>
-      <img class="abc" src="{% static 'Images/img123.png' %}" alt="" />
-      <img class="abc" src="{% static 'Images/img1234.png' %}" alt="" />
-      <img class="abc" src="{% static 'Images/img12345.png' %}" alt="" />
-    </centre>
-    <p id="check">
-      <strong>Yes,</strong> <br />This site is the way to fulfill your dream of
-      getting that well toned body while still having fun.
-    </p>
+    <div class="middle__content">
+      <h2 class="middle__motivation__text">Motivation</h2>
+      <div class="question__answer__div">
+        <div class="question__div">
+          <p class="question__p">
+            “We can’t compromise on Health by playing Online Games. <br />We
+            can’t compromise our enjoyment as well.<br />
+            Is there a way to integrate both of them ?”
+          </p>
+        </div>
+        <div class="answer__div">
+          <strong>Yes</strong>
+          <p class="answer__p">
+            This site is the way to fulfill your dream of getting that well
+            toned body while still having fun.
+          </p>
+        </div>
+      </div>
+    </div>
 
     <!-- Bottom COntent  -->
-    <h2 class="for-centre kl">How it works</h2>
-    <centre>
-      <p id="check">
-        Click the link above and you would be directed to the game selection
-        window.
-      </p>
-      <p id="check">Choose the game you want to play .</p>
-      <p id="check">You would be directed to the instructions.</p>
-    </centre>
+    <div class="bottom__content">
+      <div class="bottom__left__div">
+        <p class="how__it__works">How it works</p>
+        <div class="instruction__list">
+          <div class="instruction__item">
+            <p class="number">1</p>
+            <p class="instruction__text">
+              Click the link above and you will go to the games page.
+            </p>
+          </div>
 
-    <article id="gh">
-      <!--
-        <section id="high" class ="er">
-          <h3 class="for-centre"> Target</h3>
-          <p>Building an innovative online gaming platform that integrates video gaming with varied levels of physical activity, providing users a unique and a flexible gaming experience thereby ensuring physical fitness at the same time.
-             Users would have a choice to toggle between digital and physical modes of playing the individual games.
-          </p>
-        </section>-->
-      <section class="er">
-        <h2 class="for-centre">Demo video</h2>
-        <iframe
-          width="400"
-          height="250"
-          src="https://drive.google.com/file/d/1CQNntnyrqYKYzrreXo_ePQw2bOsCo6Cl/view?usp=sharing"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </section>
-    </article>
+          <div class="instruction__item">
+            <p class="number">2</p>
+            <p class="instruction__text">Choose the game you want to play .</p>
+          </div>
+          <div class="instruction__item">
+            <p class="number">3</p>
+            <p class="instruction__text">
+              You would be directed to the instructions.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom__right__div">
+        <article id="gh">
+          <section class="er">
+            <h2 class="for-centre">Demo video</h2>
+            <iframe
+              width="400"
+              height="250"
+              src="https://drive.google.com/file/d/1CQNntnyrqYKYzrreXo_ePQw2bOsCo6Cl/view?usp=sharing"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </section>
+        </article>
+      </div>
+    </div>
   </body>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"

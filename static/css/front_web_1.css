@@ -3,7 +3,7 @@ body {
   font-weight: 400;
 }
 .navbar {
-  background-color: var(--sky-blue);
+  background-color: var(--white);
   padding: 10px 25px 10px 25px;
 }
 .nav-link {
@@ -61,6 +61,101 @@ body {
 }
 
 .top__img {
-  width: 100px;
-  height: 100px;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+.middle__content {
+  display: flex;
+  flex-direction: column;
+  background: var(--gradient-blue);
+  color: var(--gray);
+  margin: 20px 30px;
+  padding: 10px 15px;
+  align-items: center;
+  border: 1px dashed var(--black);
+  border-radius: 30px;
+  width: 50%;
+}
+.middle__motivation__text {
+  font-size: 3.5rem;
+  padding: 20px 0;
+  font-weight: 500;
+}
+.question__answer__div {
+  display: flex;
+  justify-content: center;
+  padding: 5px 30px;
+}
+.question__div {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  padding: 0px 35px;
+}
+.question__p {
+  text-align: center;
+}
+.answer__div {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px 50px;
+}
+.answer__p {
+  text-align: center;
+}
+
+.bottom__content {
+  display: flex;
+  background-color: var(--black);
+  color: var(--white);
+  padding: 10px 20px;
+}
+.bottom__left__div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 20px;
+  padding: 5px 20px;
+  width: 50%;
+  border: 2px solid var(--sky-blue);
+  border-radius: 30px;
+}
+.how__it__works {
+  font-weight: 500;
+  font-size: 3.5rem;
+}
+.instruction__list {
+  display: flex;
+  flex-direction: column;
+}
+.instruction__item {
+  display: flex;
+  align-items: center;
+}
+.number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  font-weight: 600;
+  background: var(--gradient-blue);
+  color: var(--black);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+}
+.instruction__text {
+  padding: 0px 20px;
+  font-size: 1.1rem;
+}
+
+.bottom__right__div {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
 }
