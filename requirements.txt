@@ -105,7 +105,7 @@ kiwisolver==1.2.0
 lazy-object-proxy==1.4.3
 libarchive-c==2.9
 locket==0.2.0
-lxml==4.5.2
+lxml==4.6.2
 MarkupSafe==1.1.1
 matplotlib==3.2.2
 mccabe==0.6.1
