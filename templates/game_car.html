@@ -1,56 +1,73 @@
 {% load static %}
 
+<!DOCTYPE html>
+<!--it inform browser that the document type is HTML    -->
+<html>
+<!-- wraps all content -->
 
-<!DOCTYPE html> <!--it inform browser that the document type is HTML    -->
-<html>			<!-- wraps all content -->
-	<head>
-		<meta cherset="utf-8">				<!--sets the character set. Usally set to 'utf-8' which includes most characters  -->
-		<title>Innovation Skyline</title>
-		<link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
-      crossorigin="anonymous"
-    />
-		<link rel="stylesheet" type="text/css" href="{% static 'css/slidding_web_car.css' %}">	
-		<!--Adding css file related to this web pages  -->
-	</head>
-	<body class="for_wraping_resistence">		<!--contains all content you want to show visitors-->
-		<header id="top-part">
-			<a href="front_web_1.html" target="_self"> HOME </a>
-			<a href="game_page.html" target="_self"> GAMES </a>
-			<a href="about_us.html" target="_self"> ABOUT US  </a>	
-		</header>
+<head>
+	<meta cherset="utf-8">
+	<!--sets the character set. Usally set to 'utf-8' which includes most characters  -->
+	<title>Innovation Skyline</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+	<link rel="stylesheet" type="text/css" href="{% static 'css/slidding_web_car.css' %}">
+	<!--Adding css file related to this web pages  -->
+</head>
+
+<body class="for_wraping_resistence">
+	<!--contains all content you want to show visitors-->
+	<header id="top-part">
+		<a href="index.html" target="_self"> HOME </a>
+		<a href="game_page.html" target="_self"> GAMES </a>
+		<a href="about_us.html" target="_self"> ABOUT US </a>
+	</header>
+	<main class="centres">
+		<div>
+			<a class="btn" href="#" target="_self"> Normal Mode</a>
+		</div>
+		<div>
+			<a class="btn" href="#section1" target="_self"> Physical Mode</a>
+		</div>
+	</main>
+	<header id="section1">
+		<main class="content">
+			<h1>Guidelines for Playing !</h1>
+			<ul>
+				<li> If you are playing for the First Time, Click on <b>Start Setup</b> button. </li>
+				<li> Be ready in a convient position to play game. </li>
+				<li> Use Mouse to draw boxes and Press ENTER to confirm the particualr region to act as Switch for
+					corresponding Action name shown</li>
+				<li> Once you draw boxes for all the switches you will be directed to same page.</li>
+				<li> Now Click on the <b>Start Game</b> button to start playing the Game !</li>
+			</ul>
+			<h3> Note </h3>
+			<ul>
+				<li> The Boxes you have drawn acts as switches and gets activated when you move your Hand in that
+					area.
+					So, Make sure you have Proper Lighting in your room while playing the game.</li>
+			</ul>
+		</main>
+
 		<main class="centres">
 			<div>
-				<a class="btn" href="#" target="_self"> Normal Mode</a>
+				<form action="/start_setup_car" method="post">
+					{% csrf_token %}
+					<input type="submit" name="Start Setup" value="Start Setup" class="btn" />
+				</form>
+
 			</div>
 			<div>
-				<a class="btn" href="#section1" target="_self"> Physical Mode</a>
+				<form action="/start_game_car" method="post">
+					{% csrf_token %}
+					<input type="submit" name="Start Game" value="Start Game" class="btn" />
+				</form>
 			</div>
 		</main>
-		<header id="section1">
-			<main class="content">
-				<h1>Guidline For Game</h1>
-				<ul>
-					<li> Make bounding box According to your convient for your Front punch,Back Punch,Front Kick,Back Kick,Gasture Box. </li>
-					<li> Put Palm &#x270B of hand in Gasture Box for Throw </li>
-					<li> Put Swing &#x1F919 of hand in Gasture Box for Interact </li>
-					<li> Put Fist &#x270A of hand in Gasture Box for Block </li>
-					<li> Play  as you are present inside window and fighting with enemy each of your action happen will be consider in game. </li>
-				</ul>
-			</main>
-			<div class="putup">
-				<a class="btton" href="#" target="_self">Lets Setup</a>
-			</div>
-			<div class="putup">
-				<a class="btton" href="#" target="_self">Lets Started</a>
-			</div>
-		</header>
-	</body>
-	<script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-    crossorigin="anonymous"
-  ></script>
+	</header>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+	crossorigin="anonymous"></script>
+
 </html>
