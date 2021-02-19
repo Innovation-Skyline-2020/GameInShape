@@ -26,7 +26,7 @@ SECRET_KEY = 'io6sce#5o(g%gw=$kfwaec34!s*yd^qge28*+df3&_!2wa3=7q'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['supreme-physical-gamer.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = ['supreme-physical-gamer.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'Web_App',
 ]
 
 MIDDLEWARE = [
