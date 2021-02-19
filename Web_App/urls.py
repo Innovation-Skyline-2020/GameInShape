@@ -22,8 +22,12 @@ urlpatterns = [
     path('front_web_1.html', views.home),
     path('game_page.html', views.game_page),
     path('about_us.html', views.about_us),
-    path('game_car.html', views.game_car),
     path('game_mortal.html', views.game_mortal),
     path('admin.html', admin.site.urls),
-    
+    path('game_car.html', views.game_car),
+    path('start_setup_car', views.start_setup_car, name='start_setup_car'),
+    path('start_game_car', views.start_game_car, name='start_game_car'),
+    path('start_setup_mortal', views.start_setup_mortal, name='start_setup_mortal'),
+    path('start_game_mortal', views.start_game_mortal, name='start_game_mortal'),
+
 ]
