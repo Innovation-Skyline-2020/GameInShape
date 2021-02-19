@@ -74,7 +74,7 @@ grpcio==1.32.0
 h5py==2.10.0
 HeapDict==1.0.1
 html5lib==1.1
-httplib2==0.18.1
+httplib2==0.19.0
 idna==2.10
 imageio==2.9.0
 imagesize==1.2.0
