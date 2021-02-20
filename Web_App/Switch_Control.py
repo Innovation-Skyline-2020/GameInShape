@@ -2,7 +2,9 @@
 from Web_App.models import BoundingBoxes
 
 # from GameSetup import BoundingBoxFace, BoundingBoxSwitchList
+from skimage.exposure import is_low_contrast
 import cv2
+import imutils
 import time
 import numpy as np
 
@@ -55,7 +57,15 @@ def GetFrame(capture):
     frame = cv2.flip(frame, 1)
 
     frame = cv2.resize(frame, dsize=(900, 700))
-    return frame
+    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+    
+    # Here we try to check either surrounding to user have not low intensity of light
+    # if light present surrounding to user is less than 30% we not take picture of it
+    if is_low_contrast(gray, fraction_threshold=0.30):
+        
+        check=False
+    
+    return check,frame
 
 ###############################################################################
 # We define some global parameters so that its easier for us to tweak when required.
@@ -161,6 +171,19 @@ class VirtualSwitch():
             frame = cv2.flip(frame, 1)
 
             frame = cv2.resize(frame, dsize=(900, 700))
+
+            gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+    
+            # Here we try to check either surrounding to user have not low intensity of light
+            # if light present surrounding to user is less than 30% we not take picture of it
+            if is_low_contrast(gray, fraction_threshold=0.30):
+                    
+                text = "Low contrast: Yes Please visit where you have atleast 30 % light "
+                
+                color = (0, 0, 255)
+                
+                cv2.putText(frame, text, (10, 650), cv2.FONT_HERSHEY_SIMPLEX, 0.8,color, 2) 
+
 
             current_time = (time.time() - start_time)
 
