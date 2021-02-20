@@ -83,7 +83,7 @@ def GetFrame(capture):
 # FaceCenter = FindCenter(BoundingBoxFace)
 
 # We will activate the Switch, If Noise Level caused due to change in the pixels exceeds this Threshold value
-Threshold = 900
+Threshold = 400
 
 # It is the coordinates of the bottom-left corner of the text string in the image
 Coord_Text = (50, 50)
@@ -111,7 +111,7 @@ Count = 0
 
 class VirtualSwitch():
 
-    def __init__(self, BoundingBoxFace, BoundingBoxSwitch=None, Threshold=400, SwitchingDelay=0.00001):
+    def __init__(self, BoundingBoxFace, BoundingBoxSwitch=None, Threshold=100, SwitchingDelay=0.0001):
 
         self.Threshold = Threshold
 
@@ -279,7 +279,7 @@ class Buttons:
         self.SetupSwitchBoundingBox()
 
         # Calling the Actions object
-        self.action = Actions(self.FaceCenter, 3)
+        self.action = Actions(self.FaceCenter, 5)
 
     # For Setup of Bounding Boxes for the Switches which are our regions of interest to provide action
 
@@ -368,6 +368,7 @@ class Buttons:
                 if (GameName == 'Madalin_Stunt_Cars_2'):
                     self.action.PressValue(each_switch)
 
+        #this activate when user do some jumping,or forward or backward motion            
         if (GameName == 'Mortal_Kombat'):
             self.action.MovementAction(PresentCenter)
 
@@ -417,7 +418,7 @@ class Actions():
         key = self.Value2KeyMap[value]
         return key
 
-    def PressAndReleaseTheKey(self, key, ContDelay=0.009, DiscontDelay=0.08, isContinued=False):
+    def PressAndReleaseTheKey(self, key, ContDelay=0.00001, DiscontDelay=0.00009, isContinued=False):
 
         # First, We Press the Key
         PressTheKey(key)
@@ -484,20 +485,27 @@ class Actions():
     #  For monitoring User's Vertical motion Action
     def VerticalAction(self, Delta):
 
-        if (Delta < 60) and (self.VerticalKey == S_key):
+        if (Delta < 75) and (self.VerticalKey == S_key):
 
             ReleaseTheKey(self.VerticalKey)
 
             self.VerticalKey = None
+            
+        if (Delta >-45) and (self.VerticalKey == W_key):
+
+            ReleaseTheKey(self.VerticalKey)
+
+            self.VerticalKey = None
+                 
 
         isContinued = False
 
         # Monitering Jump
-        if Delta < -35:
+        if Delta < -45:
             self.VerticalKey = W_key
 
         # Monitering Duck
-        elif Delta > 60:
+        elif Delta > 75:
             self.VerticalKey = S_key
             isContinued = True
 
