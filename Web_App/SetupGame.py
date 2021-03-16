@@ -1,7 +1,9 @@
 # Importing relevant libraries
+from skimage.exposure import is_low_contrast
 import cv2
 import time
 import numpy as np
+import imutils
 
 # Import all the functionalities from Switch_Control and Direct_Keys
 from Web_App.Direct_Keys import *
@@ -28,8 +30,18 @@ class StartSetup(object):
         # To Draw a rectangle/box around the frame with relevant text displayed
         while True:
 
-            frame = GetFrame(self.url)
 
+            check,frame = GetFrame(self.url)
+    
+            # if we donot have sufficient light surrounding to user it will inform user
+            if check==False :
+        
+                text = "Low contrast: Yes Please visit where you have atleast 30 % light "
+        
+                color = (0, 0, 255)
+        
+                cv2.putText(frame, text, (10, 650), cv2.FONT_HERSHEY_SIMPLEX, 0.8,color, 2)
+            
             CurrentTime = (time.time() - StartTime)
             if CurrentTime > SetupTime:
                 break
