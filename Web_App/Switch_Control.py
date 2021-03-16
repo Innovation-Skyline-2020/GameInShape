@@ -59,6 +59,7 @@ def GetFrame(capture):
     frame = cv2.resize(frame, dsize=(900, 700))
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     
+    check = True
     # Here we try to check either surrounding to user have not low intensity of light
     # if light present surrounding to user is less than 30% we not take picture of it
     if is_low_contrast(gray, fraction_threshold=0.30):
