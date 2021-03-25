@@ -36,7 +36,7 @@ class StartSetup(object):
             # if we donot have sufficient light surrounding to user it will inform user
             if check==False :
         
-                text = "Low contrast: Yes Please visit where you have atleast 30 % light "
+                text = "For better Gaming Experience, make sure you have sufficient light in your environment!"
         
                 color = (0, 0, 255)
         
