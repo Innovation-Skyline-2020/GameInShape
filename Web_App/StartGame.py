@@ -129,29 +129,29 @@ def Start():
         gray = cv2.cvtColor(roi, cv2.COLOR_BGR2GRAY)
         gray = cv2.GaussianBlur(gray, (7, 7), 0)
 
-        # to get the background, keep looking till a threshold is reached
-        # so that our running average model gets calibrated
-        if num_frames < 30:
-            run_avg(gray, aWeight)
-        else:
-            # segment the hand region
-            hand = segment(gray)
+        # # to get the background, keep looking till a threshold is reached
+        # # so that our running average model gets calibrated
+        # if num_frames < 30:
+        #     run_avg(gray, aWeight)
+        # else:
+        #     # segment the hand region
+        #     hand = segment(gray)
 
-            # check whether hand region is segmented
-            if hand is not None:
-                # if yes, unpack the thresholded image and
-                # segmented region
-                (thresholded, segmented) = hand
+        #     # check whether hand region is segmented
+        #     if hand is not None:
+        #         # if yes, unpack the thresholded image and
+        #         # segmented region
+        #         (thresholded, segmented) = hand
 
-                # draw the segmented region and display the frame
-                cv2.drawContours(
-                    clone, [segmented + (right, top)], -1, (0, 0, 255))
-                if start_recording:
-                    cv2.imwrite('Temp.png', thresholded)
-                    resizeImage('Temp.png')
+        #         # draw the segmented region and display the frame
+        #         cv2.drawContours(
+        #             clone, [segmented + (right, top)], -1, (0, 0, 255))
+        #         if start_recording:
+        #             cv2.imwrite('Temp.png', thresholded)
+        #             resizeImage('Temp.png')
 
-        # draw the segmented hand
-        cv2.rectangle(clone, (left, top), (right, bottom), (0, 255, 0), 2)
+        # # draw the segmented hand
+        # cv2.rectangle(clone, (left, top), (right, bottom), (0, 255, 0), 2)
 
         # increment the number of frames
         num_frames += 1

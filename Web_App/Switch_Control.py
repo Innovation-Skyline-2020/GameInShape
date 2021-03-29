@@ -376,18 +376,18 @@ class Buttons:
 
             if pressed and (each_switch == self.NumberofSwitches-1):
 
-                if (GameName == 'Mortal_Kombat'):
+                # if (GameName == 'Mortal_Kombat'):
 
-                    from GesturePredictor import getPredictedClass
+                #     from GesturePredictor import getPredictedClass
 
-                    pred = getPredictedClass()
+                #     pred = getPredictedClass()
 
-                    if pred[0] == 0:    # Swing
-                        self.action.PressValue(6)
-                    if pred[0] == 1:    # Palm
-                        self.action.PressValue(4)
-                    if pred[0] == 2:    # Fist
-                        self.action.PressValue(5)
+                #     if pred[0] == 0:    # Swing
+                #         self.action.PressValue(6)
+                #     if pred[0] == 1:    # Palm
+                #         self.action.PressValue(4)
+                #     if pred[0] == 2:    # Fist
+                #         self.action.PressValue(5)
 
                 if (GameName == 'Madalin_Stunt_Cars_2'):
                     self.action.PressValue(each_switch)
