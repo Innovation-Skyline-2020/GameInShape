@@ -1,0 +1,7 @@
+1. Create a new Environment with below command or Install python 3.8.3 Manually.
+
+conda create -n new_django  python=3.8.3
+
+2. Install all the packages with 
+
+pip install -r requirements.txt
