@@ -14,10 +14,13 @@ from Web_App.models import BoundingBoxes
 ########################################################################################
 
 
-def Start():
+def Start(request):
 
     # Getting the Recently stored Bounding Boxes from the Database
-    bbox = BoundingBoxes.objects.last()
+    bbox = BoundingBoxes.objects.filter(Game_Name=GameName).last()
+
+    # Id = request.session['id']
+    # bbox = BoundingBoxes.objects.get(id=Id)
 
     # Conversion to required format.
     BoundingBoxFace = string_to_list(bbox.Face)
@@ -47,20 +50,20 @@ def Start():
     # To Draw a rectangle/box around the frame with relevant text displayed
     while True:
 
-        check,frame = GetFrame(capture)
+        check, frame = GetFrame(capture)
 
         # if we donot have sufficient light surrounding to user it will inform user
-        if check==False :
-        
-            text = "For better Gaming Experience, make sure you have sufficient light in your environment!"
-        
-            color = (0, 0, 255)
-        
-            cv2.putText(frame, text, (10, 650), cv2.FONT_HERSHEY_SIMPLEX, 0.8,color, 2)
+        if check == False:
 
+            text = "For better Gaming Experience, make sure you have sufficient light in your environment!"
+
+            color = (0, 0, 255)
+
+            cv2.putText(frame, text, (10, 650),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.8, color, 2)
 
         CurrentTime = (time.time() - StartTime)
-        
+
         if CurrentTime > SetupTime:
             break
 
@@ -96,17 +99,17 @@ def Start():
     # Once the Setup time finishes, the user actions will be recorded, and will be mapped to key in game.
     while True:
 
-        check,frame = GetFrame(capture)
+        check, frame = GetFrame(capture)
 
         # if we donot have sufficient light surrounding to user it will inform user
-        if check==False :
-        
-            text = "For better Gaming Experience, make sure you have sufficient light in your environment!"
-        
-            color = (0, 0, 255)
-        
-            cv2.putText(frame, text, (10, 650), cv2.FONT_HERSHEY_SIMPLEX, 0.8,color, 2)
+        if check == False:
 
+            text = "For better Gaming Experience, make sure you have sufficient light in your environment!"
+
+            color = (0, 0, 255)
+
+            cv2.putText(frame, text, (10, 650),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.8, color, 2)
 
         # It will update frame with respect to traker positon
         Success, BoundingBoxRectangleFace = tracker.update(frame)
