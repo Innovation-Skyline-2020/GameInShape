@@ -15,8 +15,7 @@ Project Banner to be added here
 #### We can’t compromise on Health by playing Online Games. But we can’t compromise on the enjoyment aspect as well. Is there a way to integrate both of them ? Yes!!
 ###   &nbsp;   &nbsp; &nbsp;   &nbsp; &nbsp;   &nbsp; &nbsp;   &nbsp;       Online Games ?  &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;     &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;        &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;     &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;  &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;     &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;  &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;     &nbsp;   &nbsp;   &nbsp;       Physical Fitness ?
 
-<img align = "left" src = "https://user-images.githubusercontent.com/57671048/113169144-f0d6ee80-9262-11eb-819b-2734402acd56.jpg" height="240" width="270">&#8592;
-<img  src = "https://user-images.githubusercontent.com/57671048/113170019-cc2f4680-9263-11eb-96ec-0864125e5fcb.jpg" height="240" width="270">&#8594;
+<img  src = "https://user-images.githubusercontent.com/57671048/113169144-f0d6ee80-9262-11eb-819b-2734402acd56.jpg" height="240" width="270">&#8592;<img  src = "https://user-images.githubusercontent.com/57671048/113170019-cc2f4680-9263-11eb-96ec-0864125e5fcb.jpg" height="240" width="270">&#8594;
 <img  src = "https://user-images.githubusercontent.com/57671048/113169227-064c1880-9263-11eb-9828-886781239838.jpg" height="240" width="270">
 
 
