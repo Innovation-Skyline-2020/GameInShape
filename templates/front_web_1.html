@@ -3,37 +3,28 @@
 <!DOCTYPE html>
 <!--it inform browser that the document type is HTML    -->
 <html>
-  <!-- wraps all content -->
-  <head>
-    <meta cherset="utf-8" />
-    <!--sets the character set. Usally set to 'utf-8' which includes most characters  -->
-    <title>Innovation Skyline</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="{% static 'css/variables.css' %}"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="{% static 'css/front_web_1.css' %}"
-    />
+<!-- wraps all content -->
 
-    <!--Adding css file related to this web pages  -->
-  </head>
-  <body class="main__div">
-    <!--contains all content you want to show visitors-->
+<head>
+  <meta cherset="utf-8" />
+  <!--sets the character set. Usally set to 'utf-8' which includes most characters  -->
+  <title>Innovation Skyline</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="{% static 'css/variables.css' %}" />
+  <link rel="stylesheet" type="text/css" href="{% static 'css/front_web_1.css' %}" />
+
+  <!--Adding css file related to this web pages  -->
+</head>
+
+<body class="main__div">
+  <!--contains all content you want to show visitors-->
+  <header>
 
     <nav class="navbar sticky-top navbar-expand-lg navbar-light">
       <div class="container-fluid">
@@ -41,26 +32,14 @@
           <a class="navbar-brand" href="front_web_1.html">Innovation Skyline</a>
         </div>
         <div class="navbar__right">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="front_web_1.html"
-                  >Home</a
-                >
+                <a class="nav-link active" aria-current="page" href="front_web_1.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="game_page.html">Games</a>
@@ -73,7 +52,9 @@
         </div>
       </div>
     </nav>
-    <!-- TOp COntent  -->
+  </header>
+  <!-- TOp COntent -->
+  <section>
     <div class="top__content">
       <div class="top__left">
         <h1 class="website__title__text">Supreme Physical Gamer</h1>
@@ -85,11 +66,7 @@
           </p>
         </div>
         <div class="top__img__div">
-          <img
-            src="{%static 'Images/bubbles.jpg' %}"
-            alt="bubbles"
-            class="top__img"
-          />
+          <img src="{%static 'Images/bubbles.jpg' %}" alt="bubbles" class="top__img" />
         </div>
       </div>
     </div>
@@ -147,18 +124,28 @@
       <div class="bottom__right__div">
         <h2 class="demo__video__text">Demo video</h2>
 
-        <iframe
-          src="https://drive.google.com/file/d/1x0y8L1mmdT3CuxD-SQ1e5GF9wgQqkqcI/preview"
-          class="video__frame"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+        <iframe src="https://drive.google.com/file/d/1x0y8L1mmdT3CuxD-SQ1e5GF9wgQqkqcI/preview" class="video__frame"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
-  </body>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-    crossorigin="anonymous"
-  ></script>
+  </section>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+<!-- Material Design for Bootstrap -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.16/js/mdb.min.js"></script>
+
+<script>
+  new WOW().init();
+</script>
+
 </html>
