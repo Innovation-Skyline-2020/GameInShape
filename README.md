@@ -1,6 +1,6 @@
 # GameInShape
 
-Project Banner to be added here
+<img  algin="center" src = "https://user-images.githubusercontent.com/57671048/113188288-7c5a7a80-9277-11eb-85d3-83250def2e47.png" height="300" width="700">
 
 [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
