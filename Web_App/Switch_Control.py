@@ -10,9 +10,10 @@ import numpy as np
 
 from Web_App.Direct_Keys import *
 ###############################################################################
-bbox = BoundingBoxes.objects.last()
+bbox = BoundingBoxes.objects.filter(Game_Name=GameName).last()
 BoundingBoxFace = string_to_list(bbox.Face)
-BoundingBoxSwitchList = string_to_listoflists(bbox.Switches)
+if (len(bbox.Switches) != 0):
+    BoundingBoxSwitchList = string_to_listoflists(bbox.Switches)
 
 # Utility Function that Calculates and returns the Center of rectangle.
 
@@ -58,40 +59,19 @@ def GetFrame(capture):
 
     frame = cv2.resize(frame, dsize=(900, 700))
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-    
+
     check = True
     # Here we try to check either surrounding to user have not low intensity of light
     # if light present surrounding to user is less than 30% we not take picture of it
     if is_low_contrast(gray, fraction_threshold=0.30):
-        
-        check=False
-    
-    return check,frame
+
+        check = False
+
+    return check, frame
 
 ###############################################################################
 # We define some global parameters so that its easier for us to tweak when required.
 
-# Bounding box for Face of the User and
-# List of Bounding boxes of Switches
-
-# Mortal_Kombat
-
-# BoundingBoxFace = (252, 197, 222, 344)
-
-# BoundingBoxSwitchList = [(727, 372, 68, 72), (43, 340, 54, 65),
-#                          (682, 507, 126, 94), (34, 507, 158, 87), (679, 104, 200, 200)]
-
-# Madalin_Stunt_Cars_2
-
-
-# BoundingBoxFace = (341, 207, 149, 271)
-
-# BoundingBoxSwitchList = [(842, 65, 55, 94), (697, 344, 54, 72), (
-#     24, 280, 43, 51), (222, 336, 27, 58), (209, 601, 61, 77), (591, 626, 46, 54)]
-
-
-# Center of the Face
-# FaceCenter = FindCenter(BoundingBoxFace)
 
 # We will activate the Switch, If Noise Level caused due to change in the pixels exceeds this Threshold value
 Threshold = 400
@@ -174,17 +154,17 @@ class VirtualSwitch():
             frame = cv2.resize(frame, dsize=(900, 700))
 
             gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-    
+
             # Here we try to check either surrounding to user have not low intensity of light
             # if light present surrounding to user is less than 30% we not take picture of it
             if is_low_contrast(gray, fraction_threshold=0.30):
-                    
-                text = "Low contrast: Yes Please visit where you have atleast 30 % light "
-                
-                color = (0, 0, 255)
-                
-                cv2.putText(frame, text, (10, 650), cv2.FONT_HERSHEY_SIMPLEX, 0.8,color, 2) 
 
+                text = "Low contrast: Yes Please visit where you have atleast 30 % light "
+
+                color = (0, 0, 255)
+
+                cv2.putText(frame, text, (10, 650),
+                            cv2.FONT_HERSHEY_SIMPLEX, 0.8, color, 2)
 
             current_time = (time.time() - start_time)
 
@@ -392,7 +372,7 @@ class Buttons:
                 if (GameName == 'Madalin_Stunt_Cars_2'):
                     self.action.PressValue(each_switch)
 
-        #this activate when user do some jumping,or forward or backward motion            
+        # this activate when user do some jumping,or forward or backward motion
         if (GameName == 'Mortal_Kombat'):
             self.action.MovementAction(PresentCenter)
 
@@ -514,13 +494,12 @@ class Actions():
             ReleaseTheKey(self.VerticalKey)
 
             self.VerticalKey = None
-            
-        if (Delta >-45) and (self.VerticalKey == W_key):
+
+        if (Delta > -45) and (self.VerticalKey == W_key):
 
             ReleaseTheKey(self.VerticalKey)
 
             self.VerticalKey = None
-                 
 
         isContinued = False
 

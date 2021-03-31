@@ -30,14 +30,16 @@ def start_setup_car(request):
     cam = StartSetup()
     Result_Setup_car = cam.get_frame()
     res = BoundingBoxes()
+    res.Game_Name = GameName
     res.Face = list_to_string(Result_Setup_car[0])
     res.Switches = listoflists_to_string(Result_Setup_car[1])
     res.save()
+    # request.session['id'] = res.id
     return render(request, 'game_car.html')
 
 
 def start_game_car(request):
-    temp = Start()
+    temp = Start(request)
     return render(request, 'game_car.html')
 
 
@@ -45,12 +47,14 @@ def start_setup_mortal(request):
     cam = StartSetup()
     Result_Setup_mortal = cam.get_frame()
     res = BoundingBoxes()
+    res.Game_Name = GameName
     res.Face = list_to_string(Result_Setup_mortal[0])
     res.Switches = listoflists_to_string(Result_Setup_mortal[1])
     res.save()
+    # request.session['id'] = res.id
     return render(request, 'game_mortal.html')
 
 
 def start_game_mortal(request):
-    temp = Start()
+    temp = Start(request)
     return render(request, 'game_mortal.html')
