@@ -38,9 +38,9 @@ a {
   }
 }
 
-.for_wraping_resistence {
+/* .for_wraping_resistence {
   flex-flow: row wrap;
-  background-image: url("/static/Images/Cool_image3.jpg");
+  background-image: url("../Images/Untitled\ design.png");
   margin-top: 0px;
   margin-bottom: 0px;
   margin-left: 0px;
@@ -52,7 +52,7 @@ a {
   -webkit-animation-fill-mode: forwards;
   animation: backgroundScroll 20s ease-in-out 1;
   animation-fill-mode: forwards;
-}
+} */
 
 .container {
   position: relative;
@@ -114,4 +114,15 @@ a {
   font-size: 14px;
   font-weight: bold;
   cursor: pointer;
+}
+
+/* animation */
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  z-index: -1;
 }

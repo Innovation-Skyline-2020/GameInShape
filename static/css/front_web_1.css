@@ -3,7 +3,7 @@ body {
   font-weight: 400;
 }
 .navbar {
-  background-color: var(--white);
+  background-color: black;
   padding: 10px 40px;
 }
 .nav-link {
