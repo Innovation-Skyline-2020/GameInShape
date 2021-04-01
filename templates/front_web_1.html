@@ -22,113 +22,218 @@
   <!--Adding css file related to this web pages  -->
 </head>
 
-<body class="main__div">
-  <!--contains all content you want to show visitors-->
+<body>
+  <!--Main Navigation-->
   <header>
+    <style>
+      #intro {
+        background-image: url("https://i.ibb.co/fFVxfJY/Untitled-design-1.jpg");
+        height: 100vh;
+      }
 
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+      /* Height for devices larger than 576px */
+      @media (min-width: 992px) {
+        #intro {
+          margin-top: -58.59px;
+        }
+      }
+
+      .navbar .nav-link {
+        color: rgb(12, 12, 12) !important;
+      }
+    </style>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar navbar-dark d-none d-lg-block"
+      style="z-index: 2000;">
       <div class="container-fluid">
-        <div class="navbar__left">
-          <a class="navbar-brand" href="front_web_1.html">Innovation Skyline</a>
-        </div>
-        <div class="navbar__right">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="front_web_1.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="game_page.html">Games</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about_us.html">About Us </a>
-              </li>
-            </ul>
-          </div>
+        <!-- Navbar brand -->
+        <a class="navbar-brand nav-link" target="_blank" href="#">
+          <strong>Innovation Skyline</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
+          aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarExample01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="front_web_1.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="game_page.html" rel="nofollow" target="_blank">Games</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about_us.html" target="_blank">About Us</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav d-flex flex-row">
+            <!-- Icons -->
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="#" rel="nofollow" target="_blank">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="#" rel="nofollow" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="#" rel="nofollow" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="#" rel="nofollow" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
+    <!-- Navbar -->
+
+    <!-- Background image -->
+    <div id="intro" class="bg-image shadow-2-light">
+      <div class="mask" style="background-color: rgba(0, 0, 0, 0.8);">
+        <div class="container d-flex align-items-center justify-content-center text-center h-100">
+          <div class="text-white">
+            <h1 class="mb-3">Supreme Physical Gamer</h1>
+            <h5 class="mb-4">Integrating online games with physical fitness.</h5>
+            <a class="btn btn-outline-light btn-lg m-2" href="game_page.html" role="button" rel="nofollow"
+              target="_blank">Play</a>
+            <a class="btn btn-outline-light btn-lg m-2" href="#content" role="button">Explore</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Background image -->
   </header>
-  <!-- TOp COntent -->
-  <section>
-    <div class="top__content">
-      <div class="top__left">
-        <h1 class="website__title__text">Supreme Physical Gamer</h1>
-      </div>
-      <div class="top__right">
-        <div class="tagline__div">
-          <p class="tagline__text">
-            Integrating online games with physical fitness.
-          </p>
-        </div>
-        <div class="top__img__div">
-          <img src="{%static 'Images/bubbles.jpg' %}" alt="bubbles" class="top__img" />
-        </div>
-      </div>
-    </div>
+  <!--Main Navigation-->
 
-    <!-- Middle Content  -->
-    <div class="middle__content">
-      <h2 class="middle__motivation__text">Motivation</h2>
-      <div class="question__answer__div">
-        <div class="question__div">
-          <p class="question__p">
-            “We can’t compromise on Health by playing Online Games. <br />We
-            can’t compromise our enjoyment as well.<br />
-            Is there a way to integrate both of them ?”
-          </p>
-        </div>
-        <div class="answer__div">
-          <strong>Yes</strong>
-          <p class="answer__p">
-            This site is the way to fulfill your dream of getting that well
-            toned body while still having fun.
-          </p>
-        </div>
-      </div>
-    </div>
+  <!--Main layout-->
+  <main class="mt-5">
+    <div class="container" id="content">
+      <!--Section: Content-->
+      <section>
+        <div class="row">
+          <div class="col-md-6 gx-5 mb-4">
+            <div class="bg-image hover-overlay ripple shadow-2-strong" data-mdb-ripple-color="light">
+              <img src="https://i.ibb.co/fFVxfJY/Untitled-design-1.jpg" class="img-fluid" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+          </div>
 
-    <!-- Bottom COntent  -->
-    <div class="bottom__content">
-      <div class="bottom__left__div">
-        <p class="how__it__works">How it works</p>
-        <div class="instruction__list">
-          <div class="instruction__item">
-            <p class="number">1</p>
-            <p class="instruction__text">
-              Click the link above and you will go to the games page.
+          <div class="col-md-6 gx-5 mb-4">
+            <h4><strong>Motivation</strong></h4>
+            <p class="text-muted">
+              <i> “We can’t compromise on Health by playing Online Games. <br />We
+                can’t compromise our enjoyment as well."</i><br /><br>
+            </p>
+            <p><strong>Is there a way to integrate both of them ?”</strong></p>
+            <p class="text-muted">
+              Yes<br>
+              This site is the way to fulfill your dream of getting that well
+              toned body while still having fun.
             </p>
           </div>
-
-          <div class="instruction__item">
-            <p class="number">2</p>
-            <p class="instruction__text">Choose the game you want to play .</p>
-          </div>
-          <div class="instruction__item">
-            <p class="number">3</p>
-            <p class="instruction__text">
-              You would be directed to the instructions.
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-md-6 gx-5 mb-4">
+            <h4><strong>How it works?</strong></h4>
+            <p class="text-muted">
+            <ul>
+              <li>Click the link above and you will go to the games page.</li>
+              <li>Choose the game you want to play</li>
+              <li>You would be directed to the instructions.</li>
+              <li>Game on.</li>
+            </ul>
             </p>
+            <p><strong>Didnt't got. Don't worry watch the below Video</strong></p>
           </div>
-          <div class="instruction__item">
-            <p class="number">4</p>
-            <p class="instruction__text">Game on.</p>
+          <div class="col-md-6 gx-5 mb-4">
+            <div class="bg-image hover-overlay ripple shadow-2-strong" data-mdb-ripple-color="light">
+              <img src="https://i.ibb.co/cvR8xJB/How-it-works.jpg" class="img-fluid" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
+      <!--Section: Content-->
 
-      <div class="bottom__right__div">
-        <h2 class="demo__video__text">Demo video</h2>
+      <hr class="my-5" />
 
-        <iframe src="https://drive.google.com/file/d/1x0y8L1mmdT3CuxD-SQ1e5GF9wgQqkqcI/preview" class="video__frame"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
+      <section class="text-center indigo darken-1 text-white" id="resources">
+
+        <div class="container">
+          <div class="wow fadeIn">
+            <h2 class="h3 text-dark">Watch Demo Video</h2>
+            <div class="row wow zoomIn">
+              <div class="col-lg-1 col-md-0 mb-r">
+
+              </div>
+              <div class="col-lg-10 col-md-12 mb-r">
+                <div class="card card-image">
+                  <div
+                    class="text-white text-center resources-card d-flex align-items-center rgba-indigo-strong py-3 px-3 rounded">
+                    <div class="card-body">
+                      <div class="h5"></div>
+                      <div class="embed-responsive embed-responsive-16by9">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/X8UtYZIxFZ0"
+                          title="YouTube video player" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen></iframe>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-1 col-md-0 mb-r"></div>
+            </div>
+          </div>
+      </section>
+
+      <hr class="my-5" />
     </div>
-  </section>
+  </main>
+  <!--Main layout-->
+
+  <!--Footer-->
+  <footer class="bg-light text-lg-start">
+    <hr class="m-0" />
+
+    <div class="text-center py-4 align-items-center">
+      <p>Follow Innovation Skyline on social media</p>
+      <a href="#" class="btn btn-primary m-1" role="button" rel="nofollow" target="_blank">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="#" class="btn btn-primary m-1" role="button" rel="nofollow" target="_blank">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="#" class="btn btn-primary m-1" role="button" rel="nofollow" target="_blank">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="#" class="btn btn-primary m-1" role="button" rel="nofollow" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-dark" href="./front_web_1.html">Innovation Skyline</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!--Footer-->
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>

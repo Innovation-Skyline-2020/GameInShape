@@ -17,10 +17,10 @@ html {
 
 .content {
   background: white;
-  width: 30%;
+  width: 45%;
   padding: 80px 40px;
   margin-top: 500px;
-  margin-left: 230px;
+  margin-left: 27vw;
   margin-right: 230px;
   font-family: calibri;
   border-radius: 10px;
@@ -62,7 +62,7 @@ a {
   text-decoration: none;
 }
 
-.for_wraping_resistence {
+/* .for_wraping_resistence {
   flex-flow: row wrap;
   background-image: url("/static/Images/image_4.jpg");
   margin-top: 0px;
@@ -71,7 +71,7 @@ a {
   margin-right: 0px;
   background-size: cover;
   background-attachment: fixed;
-}
+} */
 
 .btn {
   padding: 1.5rem;
@@ -95,4 +95,15 @@ a {
   margin-left: 400px;
   margin-right: 400px;
   margin-top: 260px;
+}
+
+/* animation */
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 250vh;
+  background-color: black;
+  z-index: -1;
 }
