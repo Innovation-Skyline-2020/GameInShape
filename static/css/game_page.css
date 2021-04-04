@@ -1,11 +1,17 @@
-#top-part {
-  background-color: orange;
-  font-size: 30px;
-  justify-content: space-around;
-  display: flex;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin: 0px 0px;
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  overflow: hidden;
+}
+* {
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
 }
 .navbar {
   background-color: white;
@@ -18,104 +24,112 @@
   font-size: 1.5rem;
 }
 
-a {
-  text-decoration: none;
-}
-@keyframes backgroundScroll {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: -180px 0px;
-  }
-}
-@-webkit-keyframes backgroundScroll {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: -180px 0px;
-  }
-}
-
-/* .for_wraping_resistence {
-  flex-flow: row wrap;
-  background-image: url("../Images/Untitled\ design.png");
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: repeat;
-  -webkit-animation: backgroundScroll 20s ease-in-out 1;
-  -webkit-animation-fill-mode: forwards;
-  animation: backgroundScroll 20s ease-in-out 1;
-  animation-fill-mode: forwards;
-} */
-
-.container {
-  position: relative;
-  width: 1100px;
+.row {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 100px;
+  margin-top: 40px;
 }
 
-.container .card {
+.flip-card {
+  background-color: transparent;
+  width: 30rem;
+  height: 20rem;
+  perspective: 1000px;
+  border-radius: 30px;
+  margin: 10px 20px;
+}
+
+.flip-card-inner {
   position: relative;
-  width: 350px;
-  height: 350px;
-  background: white;
-  border-radius: 4px;
-  padding: 20px 15px;
-  margin: 30px 20px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateX(180deg);
+  border-radius: 30px;
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 30px;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  border-radius: 30px;
+}
+
+.flip-card-back {
   display: flex;
   flex-direction: column;
-  box-shadow: 2px 5px 4px rgba(255, 0, 0, 0.5);
-  transition: 0.3s ease-in-out;
+  justify-content: center;
+  background: var(--gradient-black);
+  color: white;
+  transform: rotateX(180deg);
+  border-radius: 30px;
+  padding: 10px;
 }
-.container .card:hover {
-  height: 300px;
-}
-
-.container .card .image-resize {
-  position: relative;
-  height: 350px;
-  width: 300px;
-  border-radius: 4px;
-  top: -60px;
-  left: 10px;
-  z-index: 1;
-  box-shadow: 2px 5px 4px rgba(255, 0, 0, 0.5);
-}
-.container .card .content {
-  position: relative;
-  margin-top: -10px;
-  padding: 10px 15px;
-  text-align: centre;
-  color: black;
-  visibility: hidden;
-  opacity: 0;
-  transition: 0.3s ease-in-out;
-}
-
-.container .card:hover .content {
-  visibility: visible;
-  opacity: 1;
-  margin-top: -40px;
-}
-
-.container .card .content .btn {
-  padding: 0.5rem;
-  background: white;
-  color: black;
-  font-size: 14px;
-  font-weight: bold;
+.btnfos {
+  color: #fff;
   cursor: pointer;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 45px;
+  max-width: 160px;
+  position: relative;
+  text-transform: uppercase;
+  align-self: center;
+  width: 100%;
 }
 
+.btnfos-1 {
+  background: transparent;
+  font-weight: 100;
+  text-decoration: none;
+  color: #fff;
+}
+.btnfos-1 svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 45px;
+}
+.btnfos-1 rect {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 1;
+  stroke-dasharray: 422, 0;
+}
+
+.btnfos-1:hover {
+  background: rgba(225, 51, 45, 0);
+  letter-spacing: 1px;
+  font-weight: 300;
+  text-decoration: none;
+  color: #fff;
+}
+.btnfos-1:hover rect {
+  stroke-width: 5;
+  stroke-dasharray: 15, 310;
+  stroke-dashoffset: 48;
+  -webkit-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
 /* animation */
 canvas {
   position: absolute;
