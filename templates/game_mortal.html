@@ -23,6 +23,11 @@
     <link
       rel="stylesheet"
       type="text/css"
+      href="{% static 'css/variables.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
       href="{% static 'css/slidding_web_mortal.css' %}"
     />
     <!--Adding css file related to this web pages  -->
@@ -71,10 +76,12 @@
     <canvas id="c"></canvas>
     <main class="centres">
       <div>
-        <a class="btn" href="#" target="_self"> Normal Mode</a>
+        <a class="btn-6" href="#" target="_self">Normal Mode<span></span></a>
       </div>
       <div>
-        <a class="btn" href="#section1" target="_self"> Physical Mode</a>
+        <a class="btn-6" href="#section1" target="_self"
+          >Physical Mode<span></span
+        ></a>
       </div>
     </main>
     <header id="section1">
@@ -110,25 +117,33 @@
       </main>
       <main class="centres">
         <div>
-          <form action="/start_setup_mortal" method="post">
+          <form
+            action="/start_setup_mortal"
+            method="post"
+            id="start_setp_mortal"
+          >
             {% csrf_token %}
-            <input
-              type="submit"
-              name="Start Setup"
-              value="Start Setup"
-              class="btn"
-            />
+            <a
+              href="#"
+              class="btn-6"
+              onclick="document.getElementById('start_setp_mortal').submit()"
+              ><span></span>Start Setup</a
+            >
           </form>
         </div>
         <div>
-          <form action="/start_game_mortal" method="post">
+          <form
+            action="/start_game_mortal"
+            method="post"
+            id="start_game_mortal"
+          >
             {% csrf_token %}
-            <input
-              type="submit"
-              name="Start Game"
-              value="Start Game"
-              class="btn"
-            />
+            <a
+              href="#"
+              class="btn-6"
+              onclick="document.getElementById('start_game_mortal').submit()"
+              ><span></span>Start Game</a
+            >
           </form>
         </div>
       </main>
@@ -139,8 +154,13 @@
     integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
     crossorigin="anonymous"
   ></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script
     src="{% static '/javascript/app.js' %}"
+    type="text/javascript"
+  ></script>
+  <script
+    src="{% static '/javascript/game_mortal.js' %}"
     type="text/javascript"
   ></script>
 </html>
