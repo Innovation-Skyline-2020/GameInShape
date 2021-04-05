@@ -26,14 +26,10 @@ a unique and a flexible gaming experience thereby ensuring physical fitness at t
 - [x]  Users would have a choice to toggle between digital and physical modes of playing the individual games.
 
 # Glimpses of our product
-<kbd><img  src = "https://user-images.githubusercontent.com/57671048/113517438-9f4d9d00-959d-11eb-8872-daa0e7af5f94.png" height="300" width="375"></kbd>
-<kbd><img  src = "https://user-images.githubusercontent.com/57671048/113517439-a1176080-959d-11eb-83fe-6ed77314efe3.png" height="300" width="375"></kbd>
-<kbd><img  src = "https://user-images.githubusercontent.com/57671048/113517440-a1aff700-959d-11eb-91d9-55c88cc5ee41.png" height="300" width="375"></kbd>
-<kbd><img  src = "https://user-images.githubusercontent.com/57671048/113517441-a2e12400-959d-11eb-8573-97ee02c7d267.png" height="300" width="375"></kbd>
-<kbd><img  src = "https://user-images.githubusercontent.com/57671048/113517442-a379ba80-959d-11eb-9764-eea15006d966.png" height="300" width="375"></kbd>
-<kbd><img  src = "https://user-images.githubusercontent.com/57671048/113517443-a379ba80-959d-11eb-8ce7-fbd7d95a2b09.png" height="300" width="375"></kbd>
-<kbd><img  src = "https://user-images.githubusercontent.com/57671048/113517477-c5733d00-959d-11eb-8c2e-65602158d1d3.png" height="300" width="375"></kbd>
-<kbd><img  src = "https://user-images.githubusercontent.com/57671048/113517642-de302280-959e-11eb-843b-df681516a190.png" height="300" width="375"></kbd>
+<kbd><img  src = "static/Images/Website_Glimpses/home_page.gif" height="375" width="600"></kbd>
+<kbd><img  src = "static/Images/Website_Glimpses/games_page.gif" height="375" width="600"></kbd>
+<kbd><img  src = "static/Images/Website_Glimpses/each_game.gif" height="375" width="600"></kbd>
+<kbd><img  src = "static/Images/Website_Glimpses/game_play.gif" height="375" width="600"></kbd>
 
 # Tech Stack 
 <img  src = "https://user-images.githubusercontent.com/57671048/113174346-e8cd7d80-9267-11eb-8038-b72f052d6b4a.png" height="120" width="120"><img  src = "https://user-images.githubusercontent.com/57671048/113174329-e4a16000-9267-11eb-8c96-30eef326a2a5.png" height="120" width="120">
