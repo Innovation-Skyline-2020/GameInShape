@@ -31,6 +31,11 @@ a unique and a flexible gaming experience thereby ensuring physical fitness at t
 <kbd><img  src = "static/Images/Website_Glimpses/each_game.gif" height="375" width="600"></kbd>
 <kbd><img  src = "static/Images/Website_Glimpses/game_play.gif" height="375" width="600"></kbd>
 
+### Currently, Our product supports two popular games: 
+- [Mortal Kombat X](https://en.wikipedia.org/wiki/Mortal_Kombat_X)
+- [Madalin Stunt Cars 2](https://www.crazygames.com/game/madalin-stunt-cars-2)
+### But it is easily scalable to most of the games, We will release the updated version which incorporates many popular games soon!
+
 # Tech Stack 
 <img  src = "https://user-images.githubusercontent.com/57671048/113174346-e8cd7d80-9267-11eb-8038-b72f052d6b4a.png" height="120" width="120"><img  src = "https://user-images.githubusercontent.com/57671048/113174329-e4a16000-9267-11eb-8c96-30eef326a2a5.png" height="120" width="120">
 <img  src = "https://user-images.githubusercontent.com/57671048/113174366-ecf99b00-9267-11eb-9314-a2007d8c8057.png" height="120" width="120">
