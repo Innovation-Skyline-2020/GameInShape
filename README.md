@@ -43,7 +43,7 @@ a unique and a flexible gaming experience thereby ensuring physical fitness at t
 <img  src = "https://user-images.githubusercontent.com/57671048/113174349-e9661400-9267-11eb-99ed-718dd1e5f78a.png" height="120" width="120">
 
 # Wanna try our Product ? 
-Head over this [ComingSoon]() to start! 
+Head over this [GameInShape](http://52.15.230.103/) to start! 
 
 # Getting Started
 ###  Steps to run the Project in your local device !!
