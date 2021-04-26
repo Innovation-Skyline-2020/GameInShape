@@ -26,6 +26,7 @@ a unique and a flexible gaming experience thereby ensuring physical fitness at t
 - [x]  Users would have a choice to toggle between digital and physical modes of playing the individual games.
 
 # Glimpses of our product
+## Watch the Short Video about Project [here!](https://youtu.be/CmwvdUrCMSc) 
 <kbd><img  src = "static/Images/Website_Glimpses/home_page.gif" height="375" width="600"></kbd>
 <kbd><img  src = "static/Images/Website_Glimpses/games_page.gif" height="375" width="600"></kbd>
 <kbd><img  src = "static/Images/Website_Glimpses/each_game.gif" height="375" width="600"></kbd>
