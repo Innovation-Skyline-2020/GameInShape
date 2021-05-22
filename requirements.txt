@@ -1,6 +1,6 @@
 Django>=3.1.6
 imutils==0.5.4
-tensorflow==2.4.0
+tensorflow==2.5.0
 tflearn==0.5.0
 opencv-contrib-python==4.5.1.48
 scikit-image==0.18.1
